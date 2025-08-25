@@ -42,6 +42,7 @@ class Order(models.Model):
         ('DELIVERED', 'Delivered'),
         ('CANCELLED','Cancelled'),
     ]
+    id = models.UUIDField(primary_key=True, default=uuid4,editable=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE,related_name='orders')
     address = models.ForeignKey(Address, on_delete=models.CASCADE,related_name='orders')
     total_price = models.DecimalField(max_digits=10, decimal_places=2)
@@ -50,20 +51,17 @@ class Order(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f"order {self.id} by {self.user.first_name}"
+        return f"order {self.id} by {self.user.first_name} - {self.status}"
     
 
 
 class OrderItem(models.Model):
     order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='items')
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='order_items')
+    price = models.DecimalField(max_digits=10, decimal_places=2)
     quantity = models.PositiveIntegerField()
     total_price = models.DecimalField(max_digits=10, decimal_places=2)
 
-    def save(self,*args, **kwargs):
-        if not self.total_price:
-            self.total_price = self.quantity * self.product.price
-        super().save(*args, **kwargs)
 
     def __str__(self):
         return f"{self.product.name} X {self.quantity}"
