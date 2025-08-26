@@ -6,6 +6,7 @@ from django.contrib.auth import get_user_model
 
 
 class ProductImageSerializer(serializers.ModelSerializer):
+    image = serializers.ImageField()
     class Meta:
         model = models.ProductImage
         fields = ['id', 'image']
