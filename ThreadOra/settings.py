@@ -139,7 +139,7 @@ USE_TZ = True
 # Configuration       
 cloudinary.config( 
     cloud_name = config('cloud_name'), 
-    api_key = config('coudinary_api_key'), 
+    api_key = config('cloudinary_api_key'), 
     api_secret = config('api_secret'), # Click 'View API Keys' above to copy your API secret
     secure=True
 )
