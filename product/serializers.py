@@ -5,10 +5,16 @@ from django.contrib.auth import get_user_model
 
 
 
+class ProductImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.ProductImage
+        fields = ['id', 'image']
+
 class ProductSerializer(serializers.ModelSerializer):
+    images = ProductImageSerializer(many=True, read_only=True) 
     class Meta:
         model = models.Product
-        fields = ['id', 'name', 'slug','category', 'description', 'price','color', 'stock_status', 'brand', 'size', 'created_at', 'updated_at']
+        fields = ['id', 'name','images', 'slug','category', 'description', 'price','color', 'stock_status', 'brand', 'size', 'created_at', 'updated_at']
 
 
 class SimpleUserSerializer(serializers.ModelSerializer):
@@ -46,3 +52,5 @@ class DiscountSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Discount
         fields = ['coupon_code','discount_type','discount_value','min_purchase_amount','expiry_date','Is_active']
+
+

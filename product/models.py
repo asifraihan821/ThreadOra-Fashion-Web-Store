@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.text import slugify
 from django.conf import settings
+from .validators import validate_file_size
 from django.core.validators import MinValueValidator, MaxValueValidator
 
 # Create your models here.
@@ -62,7 +63,7 @@ class Product(models.Model):
 
 class ProductImage(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='images')
-    image = models.ImageField(upload_to='products/images/')
+    image = models.ImageField(upload_to='products/images/', validators=[validate_file_size])
     
 
 
