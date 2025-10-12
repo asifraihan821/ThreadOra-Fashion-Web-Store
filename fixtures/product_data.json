@@ -1,0 +1,1082 @@
+[
+  {
+    "model": "product.product",
+    "pk": 1,
+    "fields":{
+        "name": "Classic White Shirt",
+        
+        "slug": "classic-white-shirt",
+        "category": 1,
+        "description": "Pure cotton white shirt for all occasions.",
+        "price": 999,
+        "color": "white",
+        "stock_status": "AVAILABLE",
+        "brand": "Zara",
+        "size": "MEDIUM",
+        "created_at": "2025-08-10T00:00:00Z",
+        "updated_at": "2025-08-20T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 2,
+    "fields":{
+        "name": "Blue Denim Jeans",
+        
+        "slug": "blue-denim-jeans",
+        "category": 2,
+        "description": "Slim fit denim jeans",
+        "price": 1499,
+        "color": "blue",
+        "stock_status": "AVAILABLE",
+        "brand": "Levis",
+        "size": "LARGE",
+        "created_at": "2025-08-15T00:00:00Z",
+        "updated_at": "2025-08-15T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 3,
+    "fields":{
+        "name": "Black Leather Jacket",
+        
+        "slug": "black-leather-jacket",
+        "category": 3,
+        "description": "Stylish black leather jacket for winter.",
+        "price": 3599,
+        "color": "black",
+        "stock_status": "AVAILABLE",
+        "brand": "H&M",
+        "size": "XTRA_LARGE",
+        "created_at": "2025-07-01T00:00:00Z",
+        "updated_at": "2025-09-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 4,
+    "fields":{
+        "name": "Red Floral Dress",
+        
+        "slug": "red-floral-dress",
+        "category": 4,
+        "description": "Lightweight red floral dress perfect for summer.",
+        "price": 1899,
+        "color": "red",
+        "stock_status": "AVAILABLE",
+        "brand": "Forever 21",
+        "size": "SMALL",
+        "created_at": "2025-06-12T00:00:00Z",
+        "updated_at": "2025-08-12T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 5,
+    "fields":{
+        "name": "Gray Hoodie",
+        
+        "slug": "gray-hoodie",
+        "category": 5,
+        "description": "Soft fleece hoodie for casual wear.",
+        "price": 1299,
+        "color": "gray",
+        "stock_status": "STOCK_OUT",
+        "brand": "Nike",
+        "size": "LARGE",
+        "created_at": "2025-05-20T00:00:00Z",
+        "updated_at": "2025-06-10T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 6,
+    "fields":{
+        "name": "Checked Shirt",
+        
+        "slug": "checked-shirt",
+        "category": 1,
+        "description": "Cotton checked shirt with button-down collar.",
+        "price": 899,
+        "color": "green",
+        "stock_status": "AVAILABLE",
+        "brand": "Uniqlo",
+        "size": "MEDIUM",
+        "created_at": "2025-05-01T00:00:00Z",
+        "updated_at": "2025-07-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 7,
+    "fields":{
+        "name": "Running Shoes",
+        
+        "slug": "running-shoes",
+        "category": 6,
+        "description": "Breathable running shoes for everyday use.",
+        "price": 2999,
+        "color": "black",
+        "stock_status": "AVAILABLE",
+        "brand": "Adpkas",
+        "size": "LARGE",
+        "created_at": "2025-04-15T00:00:00Z",
+        "updated_at": "2025-07-10T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 8,
+    "fields":{
+        "name": "Casual T-Shirt",
+        
+        "slug": "casual-t-shirt",
+        "category": 2,
+        "description": "Soft cotton casual t-shirt.",
+        "price": 699,
+        "color": "yellow",
+        "stock_status": "AVAILABLE",
+        "brand": "Puma",
+        "size": "MEDIUM",
+        "created_at": "2025-07-05T00:00:00Z",
+        "updated_at": "2025-08-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 9,
+    "fields":{
+        "name": "Formal Black Pants",
+        
+        "slug": "formal-black-pants",
+        "category": 2,
+        "description": "Slim fit formal pants for office wear.",
+        "price": 1599,
+        "color": "black",
+        "stock_status": "AVAILABLE",
+        "brand": "Arrow",
+        "size": "LARGE",
+        "created_at": "2025-06-15T00:00:00Z",
+        "updated_at": "2025-07-20T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 10,
+    "fields":{
+        "name": "Leather Belt",
+        
+        "slug": "leather-belt",
+        "category":7,
+        "description": "Classic brown leather belt.",
+        "price": 499,
+        "color": "brown",
+        "stock_status": "AVAILABLE",
+        "brand": "Woodland",
+        "size": "MEDIUM",
+        "created_at": "2025-07-01T00:00:00Z",
+        "updated_at": "2025-07-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 11,
+    "fields":{
+        "name": "Woolen Scarf",
+        
+        "slug": "woolen-scarf",
+        "category": 8,
+        "description": "Warm woolen scarf for cold weather.",
+        "price": 799,
+        "color": "maroon",
+        "stock_status": "AVAILABLE",
+        "brand": "H&M",
+        "size": "SMALL",
+        "created_at": "2025-01-10T00:00:00Z",
+        "updated_at": "2025-01-20T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 12,
+    "fields":{
+        "name": "Black Sunglasses",
+        
+        "slug": "black-sunglasses",
+        "category": 9,
+        "description": "Stylish black sunglasses with UV protection.",
+        "price": 999,
+        "color": "black",
+        "stock_status": "AVAILABLE",
+        "brand": "Ray-Ban",
+        "size": "MEDIUM",
+        "created_at": "2025-05-05T00:00:00Z",
+        "updated_at": "2025-06-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 13,
+    "fields":{
+        "name": "Denim Jacket",
+        
+        "slug": "denim-jacket",
+        "category": 3,
+        "description": "Blue denim jacket with two front pockets.",
+        "price": 2199,
+        "color": "blue",
+        "stock_status": "STOCK_OUT",
+        "brand": "Wrangler",
+        "size": "LARGE",
+        "created_at": "2025-03-15T00:00:00Z",
+        "updated_at": "2025-04-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 14,
+    "fields":{
+        "name": "Cotton Shorts",
+        
+        "slug": "cotton-shorts",
+        "category": 4,
+        "description": "Comfortable cotton shorts for summer.",
+        "price": 799,
+        "color": "khaki",
+        "stock_status": "AVAILABLE",
+        "brand": "H&M",
+        "size": "MEDIUM",
+        "created_at": "2025-04-10T00:00:00Z",
+        "updated_at": "2025-05-10T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 15,
+    "fields":{
+        "name": "Sport Watch",
+        
+        "slug": "sport-watch",
+        "category": 10,
+        "description": "Digital waterproof sports watch.",
+        "price": 2499,
+        "color": "black",
+        "stock_status": "AVAILABLE",
+        "brand": "Casio",
+        "size": "LARGE",
+        "created_at": "2025-02-01T00:00:00Z",
+        "updated_at": "2025-03-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 16,
+    "fields":{
+        "name": "White Sneakers",
+        
+        "slug": "white-sneakers",
+        "category": 6,
+        "description": "Comfortable white sneakers for casual wear.",
+        "price": 2899,
+        "color": "white",
+        "stock_status": "AVAILABLE",
+        "brand": "Adpkas",
+        "size": "LARGE",
+        "created_at": "2025-06-06T00:00:00Z",
+        "updated_at": "2025-07-06T00:00:00Z"
+    }
+    },
+  {
+    "model": "product.product",
+    "pk": 17,
+        "fields":{
+        "name": "Slim Fit Blazer",
+        
+        "slug": "slim-fit-blazer",
+        "category": 3,
+        "description": "Navy blue slim fit blazer for men.",
+        "price": 3499,
+        "color": "navy",
+        "stock_status": "AVAILABLE",
+        "brand": "Van Heusen",
+        "size": "XTRA_LARGE",
+        "created_at": "2025-03-03T00:00:00Z",
+        "updated_at": "2025-04-03T00:00:00Z"
+        }
+  },
+  {
+    "model": "product.product",
+    "pk": 18,
+    "fields":{
+        "name": "Printed Kurti",
+        
+        "slug": "printed-kurti",
+        "category": 7,
+        "description": "Colorful printed kurti with round neck.",
+        "price": 1199,
+        "color": "pink",
+        "stock_status": "AVAILABLE",
+        "brand": "Aurelia",
+        "size": "MEDIUM",
+        "created_at": "2025-08-08T00:00:00Z",
+        "updated_at": "2025-08-09T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 19,
+    "fields":{
+        "name": "Winter Gloves",
+        
+        "slug": "winter-gloves",
+        "category": 8,
+        "description": "Warm woolen gloves for winter season.",
+        "price": 599,
+        "color": "black",
+        "stock_status": "AVAILABLE",
+        "brand": "Woodland",
+        "size": "MEDIUM",
+        "created_at": "2025-01-15T00:00:00Z",
+        "updated_at": "2025-02-10T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 20,
+    "fields":{
+        "name": "Formal Blue Shirt",
+        
+        "slug": "formal-blue-shirt",
+        "category": 1,
+        "description": "Slim fit formal blue shirt for men.",
+        "price": 1099,
+        "color": "blue",
+        "stock_status": "NOT_AVAILABLE",
+        "brand": "Peter England",
+        "size": "LARGE",
+        "created_at": "2025-05-10T00:00:00Z",
+        "updated_at": "2025-05-20T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 21,
+    "fields": {
+      "name": "Striped Cotton Polo",
+      
+      "slug": "striped-cotton-polo",
+      "category": 1,
+      "description": "Casual striped polo shirt made from soft cotton.",
+      "price": 899,
+      "color": "navy",
+      "stock_status": "AVAILABLE",
+      "brand": "Tommy Hilfiger",
+      "size": "MEDIUM",
+      "created_at": "2025-08-11T00:00:00Z",
+      "updated_at": "2025-09-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 22,
+    "fields": {
+      "name": "Beige Chino Pants",
+      
+      "slug": "beige-chino-pants",
+      "category": 2,
+      "description": "Smart casual chinos perfect for office wear.",
+      "price": 1599,
+      "color": "beige",
+      "stock_status": "AVAILABLE",
+      "brand": "Marks & Spencer",
+      "size": "LARGE",
+      "created_at": "2025-07-05T00:00:00Z",
+      "updated_at": "2025-08-10T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 23,
+    "fields": {
+      "name": "Winter Wool Coat",
+      
+      "slug": "winter-wool-coat",
+      "category": 3,
+      "description": "Thick wool coat designed for extreme cold.",
+      "price": 4599,
+      "color": "gray",
+      "stock_status": "STOCK_OUT",
+      "brand": "Zara",
+      "size": "DOUBLE_EXTRA_LARGE",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-02-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 24,
+    "fields": {
+      "name": "Printed Summer Skirt",
+      
+      "slug": "printed-summer-skirt",
+      "category": 4,
+      "description": "Flowy summer skirt with floral patterns.",
+      "price": 1199,
+      "color": "yellow",
+      "stock_status": "AVAILABLE",
+      "brand": "Forever 21",
+      "size": "MEDIUM",
+      "created_at": "2025-04-12T00:00:00Z",
+      "updated_at": "2025-05-02T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 25,
+    "fields": {
+      "name": "Slim Fit Formal Shirt",
+      
+      "slug": "slim-fit-formal-shirt",
+      "category": 1,
+      "description": "Crisp white formal shirt with modern slim fit.",
+      "price": 1299,
+      "color": "white",
+      "stock_status": "AVAILABLE",
+      "brand": "Arrow",
+      "size": "LARGE",
+      "created_at": "2025-03-10T00:00:00Z",
+      "updated_at": "2025-03-15T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 26,
+    "fields": {
+      "name": "Leather Biker Jacket",
+      
+      "slug": "leather-biker-jacket",
+      "category": 3,
+      "description": "Classic black leather jacket with zipper detailing.",
+      "price": 6999,
+      "color": "black",
+      "stock_status": "AVAILABLE",
+      "brand": "Harley",
+      "size": "XTRA_LARGE",
+      "created_at": "2025-02-12T00:00:00Z",
+      "updated_at": "2025-02-25T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 27,
+    "fields": {
+      "name": "Floral Kurti Set",
+      
+      "slug": "floral-kurti-set",
+      "category": 5,
+      "description": "Beautiful cotton kurti with printed dupatta.",
+      "price": 1399,
+      "color": "pink",
+      "stock_status": "AVAILABLE",
+      "brand": "Biba",
+      "size": "MEDIUM",
+      "created_at": "2025-06-12T00:00:00Z",
+      "updated_at": "2025-07-02T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 28,
+    "fields": {
+      "name": "Graphic Oversized Tee",
+      
+      "slug": "graphic-oversized-tee",
+      "category": 1,
+      "description": "Trendy oversized t-shirt with cool graphics.",
+      "price": 699,
+      "color": "white",
+      "stock_status": "AVAILABLE",
+      "brand": "H&M",
+      "size": "LARGE",
+      "created_at": "2025-07-01T00:00:00Z",
+      "updated_at": "2025-07-15T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 29,
+    "fields": {
+      "name": "Men’s Running Shoes",
+      
+      "slug": "mens-running-shoes",
+      "category": 6,
+      "description": "Lightweight running shoes with breathable mesh.",
+      "price": 2499,
+      "color": "blue",
+      "stock_status": "AVAILABLE",
+      "brand": "Nike",
+      "size": "LARGE",
+      "created_at": "2025-05-12T00:00:00Z",
+      "updated_at": "2025-05-20T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 30,
+    "fields": {
+      "name": "High Heel Sandals",
+      
+      "slug": "high-heel-sandals",
+      "category": 7,
+      "description": "Elegant high heel sandals for parties.",
+      "price": 1799,
+      "color": "red",
+      "stock_status": "AVAILABLE",
+      "brand": "Aldo",
+      "size": "MEDIUM",
+      "created_at": "2025-04-01T00:00:00Z",
+      "updated_at": "2025-04-11T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 31,
+    "fields": {
+      "name": "Denim Jacket",
+      
+      "slug": "denim-jeans",
+      "category": 3,
+      "description": "Classic blue denim jacket for men and women.",
+      "price": 2799,
+      "color": "blue",
+      "stock_status": "AVAILABLE",
+      "brand": "Levis",
+      "size": "LARGE",
+      "created_at": "2025-05-20T00:00:00Z",
+      "updated_at": "2025-06-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 32,
+    "fields": {
+      "name": "Cotton Saree",
+      
+      "slug": "cotton-saree",
+      "category": 5,
+      "description": "Lightweight cotton saree perfect for summer.",
+      "price": 1599,
+      "color": "green",
+      "stock_status": "AVAILABLE",
+      "brand": "Aarong",
+      "size": "LARGE",
+      "created_at": "2025-03-01T00:00:00Z",
+      "updated_at": "2025-03-10T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 33,
+    "fields": {
+      "name": "Men’s Hoodie",
+      
+      "slug": "mens-hoodie",
+      "category": 1,
+      "description": "Soft fleece hoodie with kangaroo pocket.",
+      "price": 1899,
+      "color": "black",
+      "stock_status": "AVAILABLE",
+      "brand": "Adidas",
+      "size": "XTRA_LARGE",
+      "created_at": "2025-10-01T00:00:00Z",
+      "updated_at": "2025-10-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 34,
+    "fields": {
+      "name": "Pleated Maxi Dress",
+      
+      "slug": "pleated-maxi-dress",
+      "category": 4,
+      "description": "Elegant long dress with pleated detailing.",
+      "price": 2299,
+      "color": "maroon",
+      "stock_status": "AVAILABLE",
+      "brand": "Zara",
+      "size": "MEDIUM",
+      "created_at": "2025-07-18T00:00:00Z",
+      "updated_at": "2025-07-28T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 35,
+    "fields": {
+      "name": "Men’s Leather Belt",
+      
+      "slug": "mens-leather-belt",
+      "category": 8,
+      "description": "Genuine leather belt with metallic buckle.",
+      "price": 799,
+      "color": "brown",
+      "stock_status": "AVAILABLE",
+      "brand": "Woodland",
+      "size": "LARGE",
+      "created_at": "2025-02-14T00:00:00Z",
+      "updated_at": "2025-03-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 36,
+    "fields": {
+      "name": "Printed Scarf",
+      
+      "slug": "printed-scarf",
+      "category": 8,
+      "description": "Light scarf with floral print.",
+      "price": 499,
+      "color": "pink",
+      "stock_status": "AVAILABLE",
+      "brand": "Mango",
+      "size": "SMALL",
+      "created_at": "2025-01-05T00:00:00Z",
+      "updated_at": "2025-02-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 37,
+    "fields": {
+      "name": "Sports Shorts",
+      
+      "slug": "sports-shorts",
+      "category": 6,
+      "description": "Comfortable shorts for workouts and sports.",
+      "price": 999,
+      "color": "gray",
+      "stock_status": "AVAILABLE",
+      "brand": "Puma",
+      "size": "MEDIUM",
+      "created_at": "2025-08-01T00:00:00Z",
+      "updated_at": "2025-08-08T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 38,
+    "fields": {
+      "name": "Silk Party Saree",
+      
+      "slug": "silk-party-saree",
+      "category": 5,
+      "description": "Luxury silk saree with golden embroidery.",
+      "price": 3599,
+      "color": "red",
+      "stock_status": "AVAILABLE",
+      "brand": "Aarong",
+      "size": "LARGE",
+      "created_at": "2025-09-01T00:00:00Z",
+      "updated_at": "2025-09-08T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 39,
+    "fields": {
+      "name": "Casual Sneakers",
+      
+      "slug": "casual-sneakers",
+      "category": 6,
+      "description": "Everyday casual sneakers with soft sole.",
+      "price": 2199,
+      "color": "white",
+      "stock_status": "AVAILABLE",
+      "brand": "Converse",
+      "size": "MEDIUM",
+      "created_at": "2025-05-05T00:00:00Z",
+      "updated_at": "2025-05-15T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 40,
+    "fields": {
+      "name": "Formal Trousers",
+      
+      "slug": "formal-trousers",
+      "category": 2,
+      "description": "Office-ready formal trousers for men.",
+      "price": 1899,
+      "color": "black",
+      "stock_status": "AVAILABLE",
+      "brand": "Raymond",
+      "size": "LARGE",
+      "created_at": "2025-03-18T00:00:00Z",
+      "updated_at": "2025-03-25T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 41,
+    "fields": {
+      "name": "Linen Casual Shirt",
+      
+      "slug": "linen-casual-shirt",
+      "category": 1,
+      "description": "Lightweight linen shirt perfect for summer outings.",
+      "price": 1299,
+      "color": "white",
+      "stock_status": "AVAILABLE",
+      "brand": "Mufti",
+      "size": "MEDIUM",
+      "created_at": "2025-06-01T00:00:00Z",
+      "updated_at": "2025-06-15T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 42,
+    "fields": {
+      "name": "Slim Fit Blazer",
+      
+      "slug": "slim-blazer",
+      "category": 3,
+      "description": "Modern slim fit blazer suitable for formal events.",
+      "price": 3599,
+      "color": "navy",
+      "stock_status": "AVAILABLE",
+      "brand": "Raymond",
+      "size": "LARGE",
+      "created_at": "2025-02-10T00:00:00Z",
+      "updated_at": "2025-03-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 43,
+    "fields": {
+      "name": "Cotton Shorts",
+      
+      "slug": "cotton-short",
+      "category": 2,
+      "description": "Comfortable cotton shorts for casual wear.",
+      "price": 799,
+      "color": "khaki",
+      "stock_status": "AVAILABLE",
+      "brand": "Jack & Jones",
+      "size": "MEDIUM",
+      "created_at": "2025-05-10T00:00:00Z",
+      "updated_at": "2025-05-25T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 44,
+    "fields": {
+      "name": "Denim Jacket",
+      
+      "slug": "denim",
+      "category": 5,
+      "description": "Classic denim jacket with button closure.",
+      "price": 2299,
+      "color": "blue",
+      "stock_status": "AVAILABLE",
+      "brand": "Levis",
+      "size": "LARGE",
+      "created_at": "2025-03-15T00:00:00Z",
+      "updated_at": "2025-04-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 45,
+    "fields": {
+      "name": "Wool Sweater",
+      
+      "slug": "wool-sweater",
+      "category": 5,
+      "description": "Soft wool sweater with round neck design.",
+      "price": 1799,
+      "color": "gray",
+      "stock_status": "AVAILABLE",
+      "brand": "Uniqlo",
+      "size": "LARGE",
+      "created_at": "2025-01-10T00:00:00Z",
+      "updated_at": "2025-02-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 46,
+    "fields": {
+      "name": "Printed Cotton Saree",
+      
+      "slug": "printed-cotton-saree",
+      "category": 7,
+      "description": "Beautiful printed saree made with pure cotton.",
+      "price": 1999,
+      "color": "green",
+      "stock_status": "AVAILABLE",
+      "brand": "Siyaram",
+      "size": "LARGE",
+      "created_at": "2025-08-05T00:00:00Z",
+      "updated_at": "2025-08-20T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 47,
+    "fields": {
+      "name": "Ankle Boots",
+      
+      "slug": "ankle-boots",
+      "category": 9,
+      "description": "Durable leather ankle boots for winter.",
+      "price": 2999,
+      "color": "brown",
+      "stock_status": "AVAILABLE",
+      "brand": "Red Tape",
+      "size": "LARGE",
+      "created_at": "2025-09-01T00:00:00Z",
+      "updated_at": "2025-09-20T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 48,
+    "fields": {
+      "name": "Silk Kurta Set",
+      
+      "slug": "silk-kurta-set",
+      "category": 7,
+      "description": "Elegant silk kurta with matching pajama.",
+      "price": 2499,
+      "color": "cream",
+      "stock_status": "AVAILABLE",
+      "brand": "Manyavar",
+      "size": "LARGE",
+      "created_at": "2025-08-02T00:00:00Z",
+      "updated_at": "2025-08-15T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 49,
+    "fields": {
+      "name": "Casual Flip Flops",
+      
+      "slug": "casual-flip-flops",
+      "category": 9,
+      "description": "Comfortable rubber flip flops for daily wear.",
+      "price": 499,
+      "color": "black",
+      "stock_status": "AVAILABLE",
+      "brand": "Sparx",
+      "size": "LARGE",
+      "created_at": "2025-06-01T00:00:00Z",
+      "updated_at": "2025-06-20T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 50,
+    "fields": {
+      "name": "Formal Shirt",
+      
+      "slug": "formal-shirt",
+      "category": 1,
+      "description": "Slim fit formal shirt ideal for office wear.",
+      "price": 1499,
+      "color": "light blue",
+      "stock_status": "AVAILABLE",
+      "brand": "Van Heusen",
+      "size": "MEDIUM",
+      "created_at": "2025-04-15T00:00:00Z",
+      "updated_at": "2025-05-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 51,
+    "fields": {
+      "name": "Track Pants",
+      
+      "slug": "track-pants",
+      "category": 6,
+      "description": "Comfortable track pants made from breathable material.",
+      "price": 1299,
+      "color": "gray",
+      "stock_status": "AVAILABLE",
+      "brand": "Puma",
+      "size": "LARGE",
+      "created_at": "2025-07-07T00:00:00Z",
+      "updated_at": "2025-07-25T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 52,
+    "fields": {
+      "name": "Handbag",
+      
+      "slug": "handbag",
+      "category": 2,
+      "description": "Stylish handbag with multiple compartments.",
+      "price": 2199,
+      "color": "pink",
+      "stock_status": "AVAILABLE",
+      "brand": "Lavie",
+      "size": "MEDIUM",
+      "created_at": "2025-05-10T00:00:00Z",
+      "updated_at": "2025-06-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 53,
+    "fields": {
+      "name": "Wrist Watch",
+      
+      "slug": "wrist-watch",
+      "category": 9,
+      "description": "Analog wristwatch with stainless steel strap.",
+      "price": 2999,
+      "color": "silver",
+      "stock_status": "AVAILABLE",
+      "brand": "Titan",
+      "size": "MEDIUM",
+      "created_at": "2025-03-05T00:00:00Z",
+      "updated_at": "2025-03-20T00:00:00Z"
+    }
+  },
+    {
+    "model": "product.product",
+    "pk": 54,
+    "fields": {
+      "name": "Round Neck T-Shirt",
+      
+      "slug": "round-neck-tshirt",
+      "category": 2,
+      "description": "Plain cotton round neck T-shirt.",
+      "price": 699,
+      "color": "red",
+      "stock_status": "AVAILABLE",
+      "brand": "H&M",
+      "size": "MEDIUM",
+      "created_at": "2025-07-01T00:00:00Z",
+      "updated_at": "2025-07-10T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 55,
+    "fields": {
+      "name": "Joggers",
+      
+      "slug": "joggers",
+      "category": 6,
+      "description": "Stretchable cotton joggers for gym and outdoor use.",
+      "price": 1599,
+      "color": "olive",
+      "stock_status": "AVAILABLE",
+      "brand": "HRX",
+      "size": "LARGE",
+      "created_at": "2025-08-02T00:00:00Z",
+      "updated_at": "2025-08-25T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 56,
+    "fields": {
+      "name": "Sleeveless Top",
+      
+      "slug": "sleeveless-top",
+      "category": 4,
+      "description": "Lightweight sleeveless top for summer.",
+      "price": 999,
+      "color": "yellow",
+      "stock_status": "AVAILABLE",
+      "brand": "Zudio",
+      "size": "SMALL",
+      "created_at": "2025-06-01T00:00:00Z",
+      "updated_at": "2025-06-10T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 57,
+    "fields": {
+      "name": "Cotton Dupatta",
+      
+      "slug": "cotton-dupatta",
+      "category": 7,
+      "description": "Soft cotton dupatta with border design.",
+      "price": 499,
+      "color": "white",
+      "stock_status": "AVAILABLE",
+      "brand": "Fabindia",
+      "size": "LARGE",
+      "created_at": "2025-07-10T00:00:00Z",
+      "updated_at": "2025-07-20T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 58,
+    "fields": {
+      "name": "Leather Belt",
+      
+      "slug": "leathered-belt",
+      "category": 7,
+      "description": "Classic brown leather belt with metal buckle.",
+      "price": 699,
+      "color": "brown",
+      "stock_status": "AVAILABLE",
+      "brand": "Allen Solly",
+      "size": "LARGE",
+      "created_at": "2025-05-05T00:00:00Z",
+      "updated_at": "2025-06-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 59,
+    "fields": {
+      "name": "Rain Jacket",
+      
+      "slug": "rain-jacket",
+      "category": 5,
+      "description": "Waterproof jacket with hood for rainy weather.",
+      "price": 2299,
+      "color": "black",
+      "stock_status": "AVAILABLE",
+      "brand": "Decathlon",
+      "size": "LARGE",
+      "created_at": "2025-07-01T00:00:00Z",
+      "updated_at": "2025-07-18T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 60,
+    "fields": {
+      "name": "Formal Trousers",
+      
+      "slug": "trousers",
+      "category":3,
+      "description": "Slim fit formal trousers for office wear.",
+      "price": 1999,
+      "color": "charcoal",
+      "stock_status": "AVAILABLE",
+      "brand": "Peter England",
+      "size": "LARGE",
+      "created_at": "2025-06-15T00:00:00Z",
+      "updated_at": "2025-07-01T00:00:00Z"
+    }
+  }
+]
