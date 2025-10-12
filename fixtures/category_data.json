@@ -1,0 +1,102 @@
+[
+    {
+    "model": "product.category",
+    "pk":1,
+    "fields": {
+        "name": "Men's T-Shirts",
+        "slug": "mens-tshirts",
+        "description": "Casual and trendy T-shirts for men.",
+        "created_at": "2025-08-01T00:00:00Z"
+    }
+    },
+  {
+    "model": "product.category",
+    "pk": 2,
+    "fields": {
+        "name": "Men's Jeans",
+        "slug": "mens-jeans",
+        "description": "Denim jeans in slim, regular and loose fits.",
+        "created_at": "2025-08-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.category",
+    "pk": 3,
+    "fields": {
+        "name": "Men's Formal Wear",
+        "slug": "mens-formal-wear",
+        "description": "Shirts, trousers and blazers for formal occasions.",
+        "created_at": "2025-08-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.category",
+    "ipk": 4,
+    "fields":{
+        "name": "Men's Footwear",
+        "slug": "mens-footwear",
+        "description": "Stylish shoes, sneakers and sandals for men.",
+        "created_at": "2025-08-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.category",
+    "pk": 5,
+    "fields":{
+        "name": "Men's Accessories",
+        "slug": "mens-accessories",
+        "description": "Belts, wallets, watches and sunglasses for men.",
+        "created_at": "2025-08-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.category",
+    "pk": 6,
+    "fields":{
+        "name": "Women's Dresses",
+        "slug": "womens-dresses",
+        "description": "Elegant and casual dresses for women.",
+        "created_at": "2025-08-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.category",
+    "pk": 7,
+    "fields":{
+        "name": "Women's Tops & Tees",
+        "slug": "womens-tops-tees",
+        "description": "Trendy tops, blouses and T-shirts for women.",
+        "created_at": "2025-08-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.category",
+    "pk": 8,
+    "fields":{
+        "name": "Women's Sarees",
+        "slug": "womens-sarees",
+        "description": "Traditional and designer sarees for all occasions.",
+        "created_at": "2025-08-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.category",
+    "pk": 9,
+    "fields":{
+        "name": "Women's Footwear",
+        "slug": "womens-footwear",
+        "description": "Heels, sandals, sneakers and more for women.",
+        "created_at": "2025-08-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "product.category",
+    "pk": 10,
+    "fields":{
+        "name": "Women's Accessories",
+        "slug": "womens-accessories",
+        "description": "Jewelry, handbags, watches and scarves.",
+        "created_at": "2025-08-01T00:00:00Z"
+    }
+  }
+]

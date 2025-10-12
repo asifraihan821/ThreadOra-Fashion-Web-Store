@@ -25,7 +25,6 @@ class Category(models.Model):
     
     
                         # Model --> Product
-
 class Product(models.Model):
     STATUS_CHOICES = [
         ('AVAILABLE', 'Available'),
@@ -58,6 +57,7 @@ class Product(models.Model):
 
     def __str__(self):
         return f"{self.name}"
+
 
 
                         #Model --> ProductImage
