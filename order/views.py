@@ -6,6 +6,7 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from order.services import OrderService
 from drf_yasg.utils import swagger_auto_schema
+from rest_framework import status
 # Create your views here.
 
 
@@ -19,6 +20,11 @@ class CartViewset(CreateModelMixin,RetrieveModelMixin,DestroyModelMixin,GenericV
             operation_summary = "user saves with new create object"
     )
     def create(self, request, *args, **kwargs):
+        existing_cart = models.Cart.objects.filter(user=self.request.user).first()
+
+        if existing_cart:
+            serializer = self.get_serializer(existing_cart)
+            return Response(serializer.data, status=status.HTTP_200_OK)
         return super().create(request, *args, **kwargs)
     
 
