@@ -125,12 +125,13 @@ def initiate_payment(request):
     amount = request.data.get("amount")
     order_id = request.data.get("orderId")
     num_of_items = request.data.get("items")
+    
     settings = { 'store_id': 'threa68f368154bf42', 'store_pass': 'threa68f368154bf42@ssl', 'issandbox': True }
     sslcz = SSLCOMMERZ(settings)
     post_body = {}
     post_body['total_amount'] = amount
     post_body['currency'] = "BDT"
-    post_body['tran_id'] = "trxn {order_id}"
+    post_body['tran_id'] = f"trxn {order_id}"
     post_body['success_url'] = "http://localhost:5173/dashboard/payment/success/"
     post_body['fail_url'] = "http://localhost:5173/dashboard/payment/fail/"
     post_body['cancel_url'] = "http://localhost:5173/dashboard/orders/"
