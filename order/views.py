@@ -8,6 +8,8 @@ from order.services import OrderService
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework import status
 from rest_framework.decorators import api_view
+from django.conf import settings as main_settings
+from django.shortcuts import HttpResponseRedirect
 # Create your views here.
 
 
@@ -132,9 +134,9 @@ def initiate_payment(request):
     post_body['total_amount'] = amount
     post_body['currency'] = "BDT"
     post_body['tran_id'] = f"trxn {order_id}"
-    post_body['success_url'] = "http://localhost:5173/dashboard/payment/success/"
-    post_body['fail_url'] = "http://localhost:5173/dashboard/payment/fail/"
-    post_body['cancel_url'] = "http://localhost:5173/dashboard/orders/"
+    post_body['success_url'] = f"{main_settings.BACKEND_URL}/api/v1/payment/success/"
+    post_body['fail_url'] = f"{main_settings.BACKEND_URL}/api/v1/payment/fail/"
+    post_body['cancel_url'] = f"{main_settings.BACKEND_URL}/api/v1/payment/cancel/"
     post_body['emi_option'] = 0
     post_body['cus_name'] = f"{user.first_name} {user.last_name}"
     post_body['cus_email'] = user.email
@@ -155,3 +157,20 @@ def initiate_payment(request):
     if response.get("status") == 'SUCCESS':
         return Response({"payment_url": response['GatewayPageURL']})
     return Response({"error": "payment initiation failed"}, status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['POST'])
+def payment_success(request):
+    order_id = request.data.get("tran_id").split('_')[1]
+    order  = models.Order.objects.get(id=order_id)
+    order.status = 'SHIPPED'
+    order.save()
+    return HttpResponseRedirect(f"{main_settings.FRONTEND_URL}dashboard/orders/")
+
+
+@api_view(['POST'])
+def payment_cancel(request):
+    return HttpResponseRedirect(f"{main_settings.FRONTEND_URL}dashboard/orders/") 
+
+@api_view(['POST'])
+def payment_fail(request):
+    return HttpResponseRedirect(f"{main_settings.FRONTEND_URL}dashboard/orders/") 

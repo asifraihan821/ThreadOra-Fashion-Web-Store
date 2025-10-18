@@ -129,7 +129,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+BACKEND_URL = config("BACKEND_URL")
+FRONTEND_URL = config("FRONTEND_URL")
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 

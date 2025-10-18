@@ -22,5 +22,8 @@ urlpatterns = [
     path('', include(router.urls)),
     path('', include(product_router.urls)),
     path('', include(cart_router.urls)),
-    path("payment/initiate/",orderviews.initiate_payment, name='initiate-payment')
+    path("payment/initiate/",orderviews.initiate_payment, name='initiate-payment'),
+    path("payment/success/", orderviews.payment_success,),
+    path("payment/fail/", orderviews.payment_fail,),
+    path("payment/cancel/", orderviews.payment_cancel,),
 ]
