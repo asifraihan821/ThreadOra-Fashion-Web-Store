@@ -2,25 +2,32 @@ from order import models
 from django.db import transaction
 from rest_framework.exceptions import PermissionDenied,ValidationError
 
-
 class OrderService:
     @staticmethod
-    def create_order(user_id, cart_id):
+    def create_order(user_id, cart_id, address=None):
+        print("🧩 Creating order for:", user_id, cart_id)
         with transaction.atomic():
             cart = models.Cart.objects.get(pk=cart_id)
             cart_items = cart.items.select_related('product').all()
 
-            total_price = sum([item.product.price *item.quantity for item in cart_items])
+            if not cart_items.exists():
+                raise ValueError("Cart is empty")
 
-            order = models.Order.objects.create(user_id=user_id, total_price=total_price)
+            total_price = sum([item.product.price * item.quantity for item in cart_items])
+
+            order = models.Order.objects.create(
+                user_id=user_id,
+                total_price=total_price,
+                address=address  # can be None
+            )
 
             order_items = [
                 models.OrderItem(
-                    order = order,
-                    product = item.product,
-                    price = item.price,
-                    quantity = item.quantity,
-                    total_price = item.product.price * item.quantity
+                    order=order,
+                    product=item.product,
+                    price=item.product.price,
+                    quantity=item.quantity,
+                    total_price=item.product.price * item.quantity
                 ) for item in cart_items
             ]
 
@@ -28,6 +35,8 @@ class OrderService:
             cart.delete()
 
             return order
+
+
         
     @staticmethod
     def cancel_order(order, user):

@@ -76,30 +76,29 @@ class CartSerializer(serializers.ModelSerializer):
     def get_total_price(self,cart):
        return sum([item.product.price*item.quantity for item in cart.items.all()])
 
-
 class CreateOrderSerializer(serializers.Serializer):
     cart_id = serializers.UUIDField()
 
-    def validate_cart_id(self,cart_id):
+    def validate_cart_id(self, cart_id):
         if not models.Cart.objects.filter(pk=cart_id).exists():
-            raise serializers.ValidationError('No cart found with this id')
+            raise serializers.ValidationError("No cart found with this id")
         if not models.CartItem.objects.filter(cart_id=cart_id).exists():
-            raise serializers.ValidationError('Cart is empty')
-        
+            raise serializers.ValidationError("Cart is empty")
         return cart_id
-    
+
     def create(self, validated_data):
         user_id = self.context['user_id']
         cart_id = validated_data['cart_id']
 
-        try:
-            order = OrderService.create_order(user_id=user_id,cart_id=cart_id)
-        except ValueError as e:
-            raise serializers.ValidationError(str(e))
-        
+        # address optional, backend decides default or None
+        address = models.Address.objects.filter(user_id=user_id).first()  # None if no address
+
+        order = OrderService.create_order(user_id=user_id, cart_id=cart_id, address=address)
+        return order
 
     def to_representation(self, instance):
         return OrderSerializer(instance).data
+
 
 
 class OrderItemSerializer(serializers.ModelSerializer):
