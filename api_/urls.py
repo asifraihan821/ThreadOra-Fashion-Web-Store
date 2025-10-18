@@ -21,5 +21,6 @@ cart_router.register('items', orderviews.CartItemViewSet, basename='cart-item')
 urlpatterns = [
     path('', include(router.urls)),
     path('', include(product_router.urls)),
-    path('', include(cart_router.urls))
+    path('', include(cart_router.urls)),
+    path("payment/initiate/",orderviews.initiate_payment, name='initiate-payment')
 ]
