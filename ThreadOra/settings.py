@@ -108,6 +108,7 @@ DATABASES = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "https://thread-ora-client-wv25.vercel.app",
+    'https://thread-ora-client-5twk.vercel.app',
 ]
 
 CORS_ALLOW_CREDENTIALS = True
