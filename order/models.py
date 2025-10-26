@@ -44,7 +44,7 @@ class Order(models.Model):
     ]
     id = models.UUIDField(primary_key=True, default=uuid4,editable=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE,related_name='orders')
-    address = models.ForeignKey(Address, on_delete=models.CASCADE,related_name='orders')
+    address = models.ForeignKey(Address, on_delete=models.CASCADE,related_name='orders', null=True, blank=True)
     total_price = models.DecimalField(max_digits=10, decimal_places=2)
     status = models.CharField(max_length=20, choices=ORDER_STATUS, default=PENDING)
     created_at  = models.DateTimeField(auto_now_add=True)

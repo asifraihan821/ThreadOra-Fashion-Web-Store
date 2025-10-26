@@ -11,7 +11,9 @@ from rest_framework.decorators import api_view
 from django.conf import settings as main_settings
 from django.shortcuts import HttpResponseRedirect
 from rest_framework.views import APIView
+from rest_framework.response import Response
 from sslcommerz_lib import SSLCOMMERZ 
+
 
 # Create your views here.
 
@@ -162,20 +164,20 @@ def initiate_payment(request):
 
 @api_view(['POST'])
 def payment_success(request):
-    order_id = request.data.get("tran_id").split('_')[1]
+    order_id = request.data.get("tran_id").split(' ')[1]
     order  = models.Order.objects.get(id=order_id)
     order.status = 'SHIPPED'
     order.save()
-    return HttpResponseRedirect(f"{main_settings.FRONTEND_URL}dashboard/orders/")
+    return HttpResponseRedirect(f"{main_settings.FRONTEND_URL}/dashboard/orders/")
 
 
 @api_view(['POST'])
 def payment_cancel(request):
-    return HttpResponseRedirect(f"{main_settings.FRONTEND_URL}dashboard/orders/") 
+    return HttpResponseRedirect(f"{main_settings.FRONTEND_URL}/dashboard/orders/") 
 
 @api_view(['POST'])
 def payment_fail(request):
-    return HttpResponseRedirect(f"{main_settings.FRONTEND_URL}dashboard/orders/") 
+    return HttpResponseRedirect(f"{main_settings.FRONTEND_URL}/dashboard/orders/") 
 
 
 class HasOrderedProduct(APIView):
